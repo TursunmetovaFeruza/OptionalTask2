@@ -73,8 +73,8 @@ public class OptionalTask2 {
      Если таких чисел несколько, найти первое из них.   
     */
         System.out.println("Fourth task");
-        int MaxComp=1000;
-        int MaxCompNum=0;
+        int maxComp=1000;
+        int maxCompNum=0;
         for (int i = 0; i < arr.length; i++) {
             int compare=0;
             String s = "" + arr[i];
@@ -86,21 +86,21 @@ public class OptionalTask2 {
                  }   
                 } 
             }
-            if(compare<MaxComp){
-               MaxComp=compare;
-                MaxCompNum=i;
+            if(compare<maxComp){
+               maxComp=compare;
+                maxCompNum=i;
             }
         }
-        System.out.println("Number: "+arr[MaxCompNum]+" Number of different digits: "+MaxComp);
+        System.out.println("Number: "+arr[maxCompNum]+" Number of different digits: "+maxComp);
         System.out.println("\n");
 /*OptionalTask 2.7
      Найти число, состоящее только из различных цифр. 
      Если таких чисел несколько, найти первое из них.
     */
         System.out.println("Seventh task");
-        int MinComp=1;
+        int minComp=1;
        
-        int MinCompNum=0;
+        int minCompNum=0;
         for (int i = 0; i < arr.length; i++) {
             int compare=0;
             String s = "" + arr[i];
@@ -112,14 +112,14 @@ public class OptionalTask2 {
                  }   
                 } 
             }
-            if(compare<MinComp){
-                MinComp=compare;
-                MinCompNum=i;
+            if(compare<minComp){
+                minComp=compare;
+                minCompNum=i;
                
             }
         }
-            if(MinComp==0){
-            System.out.println(" Number: "+arr[MinCompNum]+" Number of identical digits: "+MinComp);
+            if(minComp==0){
+            System.out.println(" Number: "+arr[minCompNum]+" Number of identical digits: "+minComp);
             }
             else{
                 System.out.println("None");
